@@ -1,0 +1,159 @@
+# Online Retail Customer Segmentation using K-Means Clustering
+
+## Project Overview
+
+This project analyzes customer purchasing behavior using an online retail dataset containing transaction records from multiple countries.
+
+The objective is to discover meaningful business insights from customer purchase history and segment customers into different groups based on their purchasing patterns.
+
+---
+
+## Problem Statement
+
+An online retail store wants to understand customer purchasing behavior and identify different customer segments to improve marketing strategies, customer retention, and business growth.
+
+### Objectives
+
+1. Analyze customer purchase history and generate business insights.
+2. Segment customers based on purchasing behavior using Machine Learning.
+
+---
+
+## Dataset Information
+
+The dataset contains:
+
+- Invoice Number
+- Product ID (StockCode)
+- Product Description
+- Quantity Purchased
+- Invoice Date
+- Unit Price
+- Customer ID
+- Country
+
+Dataset Size:
+
+- 387,961 Rows
+- 8 Columns
+
+---
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+- K-Means Clustering
+
+---
+
+## Data Preprocessing
+
+The following preprocessing steps were performed:
+
+- Loaded and explored the dataset
+- Checked data types
+- Handled missing values
+- Removed duplicate records
+- Created Revenue feature
+
+```python
+Revenue = Quantity × Price
+```
+
+- Performed Exploratory Data Analysis (EDA)
+
+---
+
+## Exploratory Data Analysis
+
+The following analyses were performed:
+
+### Top Selling Products
+Identified products with the highest sales quantity.
+
+### Top Revenue Generating Products
+Identified products contributing the highest revenue.
+
+### Country-wise Revenue Analysis
+Compared revenue generated from different countries.
+
+### Monthly Revenue Trend
+Analyzed sales performance over time.
+
+### Top Customers
+Identified customers generating the highest revenue.
+
+### Revenue Distribution
+Studied revenue patterns across transactions.
+
+### Order Quantity Analysis
+Analyzed customer purchasing quantities.
+
+---
+
+## Customer Segmentation
+
+Customer behavior was aggregated using:
+
+- Total Revenue
+- Number of Orders
+- Total Quantity Purchased
+
+K-Means Clustering was applied to segment customers into four groups.
+
+### Features Used
+
+- Revenue
+- Orders
+- Quantity
+
+### Algorithm
+
+K-Means Clustering
+
+---
+
+## Results
+
+The model identified four distinct customer groups:
+
+### Cluster 0
+Low-value customers with lower purchase frequency and revenue.
+
+### Cluster 1
+Regular customers with moderate purchasing activity.
+
+### Cluster 2
+Frequent buyers who place a large number of orders.
+
+### Cluster 3
+High-value customers generating the highest revenue.
+
+---
+
+## Business Insights
+
+- A small group of customers contributes significantly to total revenue.
+- Frequent buyers can be targeted using loyalty programs.
+- High-value customers should receive personalized offers and retention campaigns.
+- Customer segmentation enables more effective marketing strategies.
+
+---
+
+## Future Improvements
+
+- RFM (Recency, Frequency, Monetary) Analysis
+- Advanced Customer Lifetime Value Prediction
+- Recommendation System
+- Interactive Dashboard using Power BI or Tableau
+
+---
+
+## Conclusion
+
+This project successfully analyzed customer purchasing behavior and segmented customers into meaningful groups using K-Means Clustering. The insights can help businesses improve customer retention, targeted marketing, and overall sales performance.
